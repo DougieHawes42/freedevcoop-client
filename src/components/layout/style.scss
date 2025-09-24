@@ -1,0 +1,13 @@
+@import "../../display/style/variables";
+
+.darkmode-toggle {
+  bottom: $y-padding;
+  cursor: pointer;
+  font-size: $heading-size;
+  position: absolute;
+  right: $x-padding;
+}
+
+.header {
+  padding: $y-padding $x-padding;
+}

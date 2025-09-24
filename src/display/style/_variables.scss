@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&family=Fira+Code:wght@400;500&display=swap");
+
+// ---------- Light Mode ----------
+$colour1-light: #ffffff; // Background (main, neutral white)
+$colour2-light: #f5f7fa; // Secondary background / cards
+$colour3-light: #1a1a1a; // Primary text
+$colour4-light: #4a5568; // Secondary text (muted)
+$colour5-light: #2563eb; // Accent / links / buttons (blue)
+$colour6-light: #9333ea; // Secondary accent (purple, for highlights)
+$colour7-light: #e5e7eb; // Borders / dividers
+$colour8-light: #facc15; // Notification highlight (yellow)
+
+// ---------- Dark Mode ----------
+$colour1-dark: #0d1117; // Background (deep slate)
+$colour2-dark: #161b22; // Secondary background / cards
+$colour3-dark: #f0f6fc; // Primary text
+$colour4-dark: #9ca3af; // Secondary text (muted grey)
+$colour5-dark: #3b82f6; // Accent / links / buttons (blue)
+$colour6-dark: #a855f7; // Secondary accent (purple)
+$colour7-dark: #30363d; // Borders / dividers
+$colour8-dark: #eab308; // Notification highlight (yellow)
+
+// Font Variables
+$font-heading: "Montserrat", sans-serif;
+$font-body: "Inter", sans-serif;
+$font-mono: "Fira Code", monospace;
+
+// Font Sizes
+$heading-size: 42px;
+
+// Padding/Margin
+$x-padding: 2%;
+$y-padding: 7px;
+
+// ---------- Utility Mixins ----------
+@mixin light-mode {
+  background-color: $colour1-light;
+  color: $colour3-light;
+}
+
+@mixin dark-mode {
+  background-color: $colour1-dark;
+  color: $colour3-dark;
+}
