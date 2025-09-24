@@ -1,0 +1,10 @@
+@import "../../display/style/variables";
+
+.route {
+  padding-top: $header-height;
+  position: absolute;
+  max-height: 100vh;
+  min-height: 100vh;
+  padding: $header-height $x-padding $y-padding $x-padding;
+  top: 0;
+}

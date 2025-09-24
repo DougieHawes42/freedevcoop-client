@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+import { fadeSpeed1, headerHeight } from "../../display/style/motionVariables";
+
 import "./style.scss";
 
 const Header = () => {
   return (
     <motion.header
       className="header"
-      initial={{ y: -60 }}
+      initial={{ y: -headerHeight }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: fadeSpeed1 }}
     >
       <Link to="/">
         <div className="header-title-box">

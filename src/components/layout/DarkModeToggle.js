@@ -1,12 +1,19 @@
+import { motion } from "framer-motion";
 import { FiSun, FiMoon } from "react-icons/fi";
 
 import "./style.scss";
 
 const DarkModeToggle = ({ onClick, darkmode }) => {
   return (
-    <div className="darkmode-toggle" onClick={onClick}>
+    <motion.div
+      className="darkmode-toggle"
+      onClick={onClick}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+    >
       {darkmode ? <FiSun /> : <FiMoon />}
-    </div>
+    </motion.div>
   );
 };
 

@@ -9,5 +9,7 @@
 }
 
 .header {
+  max-height: $header-height;
+  min-height: $header-height;
   padding: $y-padding $x-padding;
 }
