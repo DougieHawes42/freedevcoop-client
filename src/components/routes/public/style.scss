@@ -1,1 +1,18 @@
 @import "../../../display/style/variables";
+
+.home {
+  .home-form-container {
+    @include align-centre;
+    max-width: 600px;
+    width: 100%;
+    .home-sign-up-toggle {
+      bottom: 0;
+      cursor: pointer;
+      position: absolute;
+    }
+  }
+  .home-sign-up-toggle {
+    .home-sign-up-toggle-text {
+    }
+  }
+}

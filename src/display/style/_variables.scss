@@ -30,6 +30,7 @@ $font-mono: "Fira Code", monospace;
 
 // Font Sizes
 $heading-size: 42px;
+$font-size1: 21px;
 
 // Padding/Margin
 $x-padding: 2%;
@@ -44,4 +45,9 @@ $y-padding: 7px;
 @mixin dark-mode {
   background-color: $colour1-dark;
   color: $colour3-dark;
+}
+
+@mixin align-centre {
+  margin-left: 50%;
+  transform: translateX(-50%);
 }

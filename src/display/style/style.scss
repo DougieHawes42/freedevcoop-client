@@ -5,8 +5,11 @@
 }
 
 * {
+  border-style: solid;
+  border-width: 0;
   box-sizing: border-box;
   margin: 0;
+  outline: none;
   text-decoration: none;
 }
 
@@ -24,11 +27,15 @@
   p {
     font-family: $font-body;
   }
+  label {
+    font-family: $font-mono;
+  }
 }
 
 .app-darkmode {
   background-color: $colour1-dark;
   * {
+    border-color: $colour7-dark;
     color: $colour3-dark;
   }
   .header {
@@ -39,6 +46,7 @@
 .app-lightmode {
   background-color: $colour1-light;
   * {
+    border-color: $colour7-light;
     color: $colour3-light;
   }
   .header {
